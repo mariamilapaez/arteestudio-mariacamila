@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto:wght@300;400;700&display=swap');
+
+/* configuracion inicial */
+
+/* crear constate diseño */
+
+:root{
+    /* colores */
+    --colorEncabesado:#081141;
+    --colorpie:#09d8e2;
+    --colorEnlace:#000;
+    --colorEnlaceSobre:#ebf1f0;
+    /* fuente */
+    --textos:'roboto', sans-serif;
+--tamTitulos:5.3rem;
+}
+
+/* el simbolo o caracte (*), es el selector universal en css */
+ *{
+    box-sizing: border-box;
+ }
+
+ /* para escribir una clase, que esta en el html, se escribe como punto .home-wrapper */
+
+ .home-wrapper{
+/* magen de fondo */
+background-image: url('../imagenes/fondo.jpg');
+background-size: cover;
+ }
+ /* selector de encabezado header */
+ header{
+    width: 100%;
+    background-color: var(--colorEncabesado);
+    position: fixed;
+    /* espaciado */
+    padding: 10px 0;
+
+ }
+
+/* cambiar de tamaño al logo */
+header img{
+    width: 200px;
+}
+/* organizae el menu  */
+header nav{
+    float:right;
+    margin-top: 10px;
+    
+}
+header nav a{
+    color: var(--colorEnlace);
+    text-decoration: none;
+    /* background-color: var (--coloEnlacesobre); */
+    margin-left: 5px ;
+    
+    
+}
+
+/* crear los estilos de la secion home */
+/* los id en scc se escribe con el simbolo de # */
+#home{
+    /* textos centrados */
+    text-align: center;
+    /* espacio superior e inferior; */
+    padding: 250px 0 250px;
+}
+
+
+/* las class se representa por un . */
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* ultilizar el selector de le etiqueta section */
+section{
+    /* espaciado superior */
+    padding-top: 80px;
+}
+
+/* en la seleccion home,  aplicar estilo al titulo novedades */
+
+#home h2{
+    /* fuente */
+    font-family: var(--textos); 
+    /* color de fuente */
+    color:#fff;
+/* tamaño de fuente */
+font-size: var(--tamTitulos);
+/* negrita al titulo */
+font-weight: 700;
+
+
+
+}
+/* aplicar estilos al texto en la seccion home */
+#home p{
+font-family: var(--textos);
+font-size: 2.3rem;
+color: #fff;
+}
+
